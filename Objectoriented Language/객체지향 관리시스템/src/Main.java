@@ -45,11 +45,11 @@ class MainMenu{
 	Scanner scan=new Scanner(System.in);
 	public int IssueMenu() {
 		System.out.println("menu");
-		System.out.println("01. 1ÇĞ³âÃß°¡");
-		System.out.println("02. 2ÇĞ³âÃß°¡");
-		System.out.println("03. ±¸¼º");
-		System.out.println("04. ÇĞ»ıº° Ãâ·Â");
-		System.out.println("05. ¸ğµÎ Ãâ·Â");
+		System.out.println("01. 1í•™ë…„ì¶”ê°€");
+		System.out.println("02. 2í•™ë…„ì¶”ê°€");
+		System.out.println("03. êµ¬ì„±");
+		System.out.println("04. í•™ìƒë³„ ì¶œë ¥");
+		System.out.println("05. ëª¨ë‘ ì¶œë ¥");
 		System.out.println("sel: ");
 		sel=scan.nextInt();
 		return sel;
