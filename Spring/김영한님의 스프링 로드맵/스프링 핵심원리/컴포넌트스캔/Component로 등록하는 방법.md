@@ -25,3 +25,4 @@
 1. 주로 수동으로 관리 해줄때 사용
 2. Appconfig를 넘겨주면 Appconfig는 빈으로 등록되지만 메서드들은 빈으로 등록되지 못한다.
 3. @Bean으로 등록을 해주고 싱글톤 유지를 위해 @Configuration를 붙여주면 CGLB기술을 통해 싱글톤으로 관리를 해준다.
+4. 또한 Configuration를 안에 component를 포함하고 있어서 붙이면 conponent가 된다.
