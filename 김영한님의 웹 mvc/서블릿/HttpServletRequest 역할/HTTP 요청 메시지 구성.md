@@ -1,10 +1,11 @@
-![image](https://user-images.githubusercontent.com/108928206/183239366-b9702252-0fc5-4261-a93c-db0de69b5e4c.png)
 
 1. 시작라인: 요청메서드, 경로, 쿼리, http 버전
   
   -요청메서드, 경로, http버진은 다 들어가고 쿼리는 api전송 빼고는 다 들어감
   
-2. 헤더: host정보가 들어감 ,http api데이터 전송인 경우에만 Content- Type이 application/json으로 들어감
+2. 헤더: host정보가 들어감 ,http api데이터 전송인 경우에 Content- Type이 application/json으로 들어감
+  
+  http form형식은 Content-Type: application/x-www-form-urlencoded
 
 3. body부: http api데이터 전송인 경우에--> json형식
 
