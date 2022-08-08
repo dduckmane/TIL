@@ -31,4 +31,10 @@
 
 ![image](https://user-images.githubusercontent.com/108928206/183414070-7ccdcc58-62c4-499d-a3a9-deeec7bc3f48.png)
 
+3) view가 model의 값을 이용해서 request에 담아주어야한다.
+
+![image](https://user-images.githubusercontent.com/108928206/183414830-d94bcd44-dddc-46a6-b59e-3d58f9cb472a.png)
+
+
+![image](https://user-images.githubusercontent.com/108928206/183414946-e30a9848-41fc-4f7a-ab90-fa3131600a3b.png)
 
