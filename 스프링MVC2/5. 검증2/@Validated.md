@@ -1,6 +1,6 @@
 @Validated는 결국에는 rejectValue와 같다.
 
-1. 바인딩 성공 시 작용( 바인딩 실패시에는 스프링이 처리)
+1. 바인딩 성공 시 작용(type이 안맞을 시에는 스프링이 처리, 타입이 안맞아도 바인딩은 된다.)
 2. bindingresult의 데이터를 이용해서 Bean Validation에 맞게 검증을 한다.
 3. 만약 검증 실패시
 4. bindingresult.rejectvalue와 같은 일을 한다.=에러를 만들고 필드명, 에러코드, 파라미터, 기본 메시지를 넣어준다.
