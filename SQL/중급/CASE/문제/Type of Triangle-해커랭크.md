@@ -5,3 +5,6 @@ https://www.hackerrank.com/challenges/what-type-of-triangle/problem?isFullScreen
 case의 순서가 중요하다.
 
 case에서 when에서 처음에 잡히면 다음 구문은 실행이 되지 않는다.
+
+![image](https://user-images.githubusercontent.com/108928206/187447017-5d95b645-5b75-462d-9cfb-516fb4030f43.png)
+
