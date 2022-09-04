@@ -1,3 +1,5 @@
+[테그 라이브러리 추가]: <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 1. form:form태크
 
    -action, method가 default로 지정이 되고
