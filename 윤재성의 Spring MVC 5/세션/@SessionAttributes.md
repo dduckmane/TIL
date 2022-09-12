@@ -9,12 +9,23 @@
 
 sessionBean1이 model에 담기는데
 
+2.
+
 ![image](https://user-images.githubusercontent.com/108928206/189572224-9b4fe6b8-90c8-4d34-a2e2-f8368ad23406.png)
 
 이게 있으면 세션에 담긴다.
 
 그래서 사용을 하고 싶을 때는
 
+3.
+
 ![image](https://user-images.githubusercontent.com/108928206/189572267-5992ac13-5597-4c87-a2e5-8d47fed0b003.png)
 
 이렇게 사용하면 된다.
+
+4. 참고
+
+![image](https://user-images.githubusercontent.com/108928206/189572537-7e4dd813-c82d-4467-a379-4805341168c0.png)
+
+여러개를 등록
+
