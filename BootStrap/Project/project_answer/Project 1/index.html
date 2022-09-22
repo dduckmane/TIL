@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/app.css">
+  <title>My first Web</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-lg sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand align-middle">
+        <h1 class="h3 m-0">
+          <img src="assets/images/bootstrap-logo.png" alt="Logo" height="36px">
+         
+        </h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#top" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#intro" class="nav-link">
+              Intro
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">
+              Services
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#slogan" class="nav-link">
+              Slogan
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link">
+              Gallery
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#cta" class="nav-link">
+              Contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#find-us" class="nav-link">
+              Find us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="top"><!--여기에 background-image-->
+    <div class="section-content overlay d-flex justify-content-center align-items-center">
+      <!--
+        1. 여기에 overlay
+        2. section-content를 두고 작업을 한다.
+        3. d-flex justify-content-center align-items-center는 sectioncontent영역에 container를 정렬하겠다라는 의미이다.
+      -->
+      <div class="container-xxl">
+        <div class="row align-items-center"><!--그리드를 적용, 상하정렬하겠다.-->
+          <div class="col-md-9 welcome"><!--welcome은 custom-->
+            <h1 class="welcome-title fw-light">Welcome to <span class="text-warning fw-bold">my first website</span>.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quae.</h1>
+            <div class="divider"></div>
+            <div class="row welcome-desc">
+              <p class="col-sm-10 col-md-12 lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                error sint nihil ex ab nisi nulla totam omnis beatae provident?</p>
+              <p class="col-sm-2 col-md-12">
+                <a href="#" class="btn btn-primary">Read more</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 d-none d-md-block letsgo">
+            <!--1. md이상에서만 존재,
+                2. d-none d-md-block는 같이 써주어야한다. -->
+            <div class="card card-body letsgo-card"><!--card와 cardbody는 독립적이어서 부모자식으로 쓰나 같이 쓰나 같다.-->
+              <div class="letsgo my-3"><!--
+                1. 밑에 컨택트가 있는 경우에 항상 생각
+                2. 3=1rem , lrem: body의 font-size에 1배수이다.
+              -->
+                <h4 class="letsgo-title card-title text-dark mb-3">Easy contact!</h4><!--card title은 부트스트랩-->
+                <p class="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                  tempora.</p><!--text-secondary: 회색-->
+              </div>
+              <div class="letsgo-card-form">
+                <form>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your name">
+                  </div>
+                  <div class="mb-3">
+                    <input type="tel" class="form-control" placeholder="Your phone">
+                  </div>
+                  <div class="form-check mb-3">
+                    <input type="text" class="form-check-input" id="flexCheckDefault">
+                    <label for="flexCheckDefault" class="form-check-label text-secondary">
+                      I agree to provide privacy.
+                    </label>
+                  </div>
+                  <p class="mb-3">
+                    <button class="btn btn-primary w-100" type="button">Submit</button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="intro">
+    <div class="section-content">
+      <div class="container intro"><!--항상 section-> section-content-> container구조-->
+        <div class="row align-items-center">
+          <div class="col-md-6 intro-first"><!--그리드안에 그리드가 있는 형태-->
+            <div class="row px-md-3"><!--6부분을 6*4형태로 그리드-->
+              <div class="col-6"><!--그리드당 카드형식으로 한다.-->
+                <div class="card card-body my-3 position-relative rounded-3 shadow-lg intro-first-card">
+                  <!--그리드당 cardbody를 이용-->
+                  <div
+                    class="overlay d-flex justify-content-center align-items-center position-absolute h-100 w-100 shadow-lg">
+                    <!--
+                        1. d-flex justify-content-center align-items-center: 항상 바로 밑 여기서는 h3의 정렬
+                        2. overlay는 항상 위에 박스에 사진이 있어야 h-100, w-100으로 크기를 맞춘다.
+                        3. position-relative관계인 이유: -div안에 div는 부모div의 content영역안에 존재한다.=padding이 있을 시에 작아진다.
+                                                        -그래서 position을 놓고 top:0 left:0 을 해주어야한다. 그리고 position관계이어야 페딩까지의 길이가 된다.
+                                                        -position관계가 아닌상태에서 h-100을 주면 content영역의 길이의 100%가 된다.
+                        4. 결론: -부모에 이미지를 넣고 자식에 overlay를 넣는다. - postion관계를 맺고 위치설정과 길이설정을 해준다.
+                    -->
+                    <h3 class="fw-light">
+                      <a href="#" class="link-light text-decoration-none">Link 1</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card card-body my-3 position-relative rounded-3 shadow-lg intro-first-card">
+                  <div
+                    class="overlay d-flex justify-content-center align-items-center position-absolute h-100 w-100 shadow-lg">
+                    <h3 class="fw-light">
+                      <a href="#" class="link-light text-decoration-none">Link 2</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card card-body my-3 position-relative rounded-3 shadow-lg intro-first-card">
+                  <div
+                    class="overlay d-flex justify-content-center align-items-center position-absolute h-100 w-100 shadow-lg">
+                    <h3 class="fw-light">
+                      <a href="#" class="link-light text-decoration-none">Link 3</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card card-body my-3 position-relative rounded-3 shadow-lg intro-first-card">
+                  <div
+                    class="overlay d-flex justify-content-center align-items-center position-absolute h-100 w-100 shadow-lg">
+                    <h3 class="fw-light">
+                      <a href="#" class="link-light text-decoration-none">Link 4</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 intro-second">
+            <h5 class="fw-light">Greetings!</h5>
+            <h1 class="mb-4">Introduce our website.</h1>
+            <div class="intro-text">
+              <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum recusandae praesentium
+                consectetur eum quis odit! Minima, eum non vero dolores adipisci quia sint voluptatem doloribus ullam
+                cum voluptas deserunt nostrum!</p>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae expedita veniam error
+                architecto est labore maiores distinctio, hic sint! Error.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-content">
+      <div class="container services"><!--문맥상 services란 클래스를 준다.-->
+        <div class="services-header text-center mb-5"><!--header와 body를 cutstom으로 나눈다. text-center:boot꺼-->
+          <h1 class="display-5">Our amazing services</h1>
+          <div class="divider"></div>
+          <p class="lead text-secondary"><!--글자는 뚜렷이 회색으로-->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet alias temporibus est cum autem enim, aperiam quibusdam a veritatis voluptatibus?
+          </p>
+        </div>
+        <div id="slick-slide" class="sercives-body"><!--slick을 사용하겠다. 밑에 div기준으로 슬릭이 된다.-->
+          <!--제이쿼리,슬릭js, 슬릭 css필요-->
+          <div class="services-col mx-2 my-3"><!--margin으로 간격을 둔 상태에서-->
+            <div class="card"><!--그 content안에 card를 두겠다.-->
+              <a href="#">
+                <img src="./assets/images/port1.jpg" alt="" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Slide title</h4>
+                <p class="card-text fw-light mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laboriosam quisquam totam voluptatibus. Dignissimos laudantium repellendus cum adipisci. Voluptates, eligendi!
+                </p>
+                <a href="#" class="btn btn-primary">View more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="services-col mx-2 my-3">
+            <div class="card">
+              <a href="#">
+                <img src="./assets/images/port2.jpg" alt="" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Slide title</h4>
+                <p class="card-text fw-light mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laboriosam quisquam totam voluptatibus. Dignissimos laudantium repellendus cum adipisci. Voluptates, eligendi!
+                </p>
+                <a href="#" class="btn btn-primary">View more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="services-col mx-2 my-3">
+            <div class="card">
+              <a href="#">
+                <img src="./assets/images/port3.jpg" alt="" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Slide title</h4>
+                <p class="card-text fw-light mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laboriosam quisquam totam voluptatibus. Dignissimos laudantium repellendus cum adipisci. Voluptates, eligendi!
+                </p>
+                <a href="#" class="btn btn-primary">View more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="services-col mx-2 my-3">
+            <div class="card">
+              <a href="#">
+                <img src="./assets/images/port4.jpg" alt="" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Slide title</h4>
+                <p class="card-text fw-light mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laboriosam quisquam totam voluptatibus. Dignissimos laudantium repellendus cum adipisci. Voluptates, eligendi!
+                </p>
+                <a href="#" class="btn btn-primary">View more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="services-col mx-2 my-3">
+            <div class="card">
+              <a href="#">
+                <img src="./assets/images/port5.jpg" alt="" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Slide title</h4>
+                <p class="card-text fw-light mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laboriosam quisquam totam voluptatibus. Dignissimos laudantium repellendus cum adipisci. Voluptates, eligendi!
+                </p>
+                <a href="#" class="btn btn-primary">View more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="services-col mx-2 my-3">
+            <div class="card">
+              <a href="#">
+                <img src="./assets/images/port6.jpg" alt="" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Slide title</h4>
+                <p class="card-text fw-light mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laboriosam quisquam totam voluptatibus. Dignissimos laudantium repellendus cum adipisci. Voluptates, eligendi!
+                </p>
+                <a href="#" class="btn btn-primary">View more...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="slogan">
+    <div class="section-content d-flex align-items-center h-100">
+      <!--
+        1. h-100:길이를 컨텐트에 맞추는 것이 아니라 화면이 움직이면서(id-slogan은 뷰포트이므로) 같이 따라서 움직이겠다.
+        2. 부모가 뷰포트일때 section-content도 h-100을 주는 것이 좋음
+      -->
+      
+      <div class="container slogan">
+        <div class="row">
+          <div class="col-md-6"><!--왼쪽반만사용하겠다. 오른 쪽에는 아무것도 없음-->
+            <div class="card card-body slogan-card">
+              <h1 class="mb-3 mb-3">Our Slogan...</h1>
+              <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, mollitia iure. Numquam eius necessitatibus doloribus, minus ex delectus quaerat? Eos quasi saepe repellendus eaque ab optio maxime obcaecati consectetur exercitationem.</p>
+              <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, mollitia iure. Numquam eius necessitatibus doloribus, minus ex delectus quaerat? Eos quasi saepe repellendus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="features">
+    <div class="section-content">
+      <div class="container features">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card card-body shadow border-0 features-card">
+              <h4 class="card-title mb-3">
+                <span class="fw-bold">1</span>
+                Feature 1
+              </h4>
+              <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id amet beatae eligendi quaerat officiis dignissimos distinctio, magnam aut laborum hic.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card card-body shadow border-0 features-card">
+              <h4 class="card-title mb-3">
+                <span class="fw-bold">2</span>
+                Feature 2
+              </h4>
+              <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id amet beatae eligendi quaerat officiis dignissimos distinctio, magnam aut laborum hic.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card card-body shadow border-0 features-card">
+              <h4 class="card-title mb-3">
+                <span class="fw-bold">3</span>
+                Feature 3
+              </h4>
+              <p class="card-text fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id amet beatae eligendi quaerat officiis dignissimos distinctio, magnam aut laborum hic.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="section-content">
+      <div class="container gallery">
+        <div class="gallery-header text-center mb-5">
+          <h1 class="display-4">Our gallery</h1>
+          <div class="divider"></div>
+          <p class="lead text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, error. Veniam, deleniti ullam. Inventore esse ab, amet voluptatum corrupti suscipit.</p>
+        </div>
+        <div class="row gallery-body">
+          <div class="col-md-4 col-sm-6 mb-4 gallery-item">
+            <div class="card card-body border-0 p-0">
+              <div class="overlay d-flex flex-column justify-content-center align-items-center h-100 w-100 border-2">
+                <h2 class="gallery-title">Gallery 1</h2>
+                <a class="link-warning text-decoration-none" href="#">View this gallery</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4 gallery-item">
+            <div class="card card-body border-0 p-0">
+              <div class="overlay d-flex flex-column justify-content-center align-items-center border-2">
+                <h2 class="gallery-title">Gallery 2</h2>
+                <a class="link-warning text-decoration-none" href="#">View this gallery</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4 gallery-item">
+            <div class="card card-body border-0 p-0">
+              <div class="overlay d-flex flex-column justify-content-center align-items-center h-100 w-100 border-2">
+                <h2 class="gallery-title">Gallery 3</h2>
+                <a class="link-warning text-decoration-none" href="#">View this gallery</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4 gallery-item">
+            <div class="card card-body border-0 p-0">
+              <div class="overlay d-flex flex-column justify-content-center align-items-center h-100 w-100 border-2">
+                <h2 class="gallery-title">Gallery 4</h2>
+                <a class="link-warning text-decoration-none" href="#">View this gallery</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4 gallery-item">
+            <div class="card card-body border-0 p-0">
+              <div class="overlay d-flex flex-column justify-content-center align-items-center h-100 w-100 border-2">
+                <h2 class="gallery-title">Gallery 5</h2>
+                <a class="link-warning text-decoration-none" href="#">View this gallery</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4 gallery-item">
+            <div class="card card-body border-0 p-0">
+              <div class="overlay d-flex flex-column justify-content-center align-items-center h-100 w-100 border-2">
+                <h2 class="gallery-title">Gallery 6</h2>
+                <a class="link-warning text-decoration-none" href="#">View this gallery</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="position-relative">
+    <div class="section-content position-absolute h-100 w-100 overlay d-flex flex-column justify-content-center align-items-center">
+      <div class="container text-center cta">
+        <h3 class="dispaly-6 text-primary">
+          Contact us anytime!
+        </h3>
+        <h2 class="display-4 text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p class="lead text-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum modi eaque maxime quasi eum eos asperiores amet quas ut? Sit.</p>
+        <h1 class="m-0">
+          <a href="tel:02-111-1111" class="link-warning text-decoration-none">02-111-1111</a>
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section id="find-us">
+    <div class="container-fluid px-0 mb-3">
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14280.713052870058!2d126.97104083821134!3d37.5704304726405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca37454f683b1%3A0xfa19c5217c6a0bc0!2z6rSR7ZmU66y4!5e0!3m2!1sko!2skr!4v1629755858980!5m2!1sko!2skr" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 offset-md-8 col-10 find-us"><!--offset을 두어 우측 배치-->
+          <h3>Contact us!</h3>
+          <div class="divider"></div>
+          <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, possimus.</p>
+          <div class="d-flex text-secondary">
+            <p class="fw-bold me-5">
+              <span class="text-uppercase">phone</span>: 
+              <a href="tel:02-111-1111" class="text-decoration-none">02-111-1111</a>
+            </p>
+            <p class="fw-bold">
+              <span class="text-uppercase">email</span>: 
+              <a href="mailto:jdoe@email.com" class="text-decoration-none">jdoe@email.com</a>
+            </p>
+          </div>
+          <form action="">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your E-mail">
+            </div>
+            <div class="mb-3">
+              <textarea rows="3" class="form-control" placeholder="Please write down any questions you have."></textarea>
+            </div>
+            <div class="mb-3">
+              <input type="checkbox" id="checkDefault" class="form-check-input">
+              <label for="checkDefault" class="form-check-label text-secondary">
+                I agree to provide privacy.
+              </label>
+            </div>
+            <p class="mb-3">
+              <button class="btn btn-primary w-100">Send!</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="section-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 text-center footer-1">
+            <img src="./assets/images/bootstrap-big-logo.png" alt="Logo" class="img-fluid footer-logo">
+            <div class="sns mt-4">
+              <a target="_blank" href="#" class="mx-1 text-decoration-none social">
+                <img src="./assets/images/icon-facebook.png" alt="Facebook" width="38px">
+              </a>
+              <a target="_blank" href="#" class="mx-1 text-decoration-none social">
+                <img src="./assets/images/icon-instagram.png" alt="Instagram" width="38px">
+              </a>
+              <a target="_blank" href="#" class="mx-1 text-decoration-none social">
+                <img src="./assets/images/icon-twitter.png" alt="Twitter" width="38px">
+              </a>
+              <a target="_blank" href="#" class="mx-1 text-decoration-none social">
+                <img src="./assets/images/icon-youtube.png" alt="Youtube" width="38px">
+              </a>
+              <a target="_blank" href="#" class="mx-1 text-decoration-none social">
+                <img src="./assets/images/icon-naver-block.png" alt="Naver blog" width="38px">
+              </a>
+              <a target="_blank" href="#" class="mx-1 text-decoration-none social">
+                <img src="./assets/images/icon-kakao-channel.png" alt="Kakao Channel" width="38px">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 footer-2">
+            <h4 class="mb-4">Footer 2</h4>
+            <ul>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4 footer-3">
+            <h4 class="mb-4">Footer 3</h4>
+            <ul>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4 footer-4">
+            <h4 class="mb-4">Our Infos</h4>
+            <div class="info-body">
+              <p class="mb-2">
+                <i class="fas fa-user"></i> CEO: Hong Gil-dong
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-map-marked-alt"></i> Address: 11-111 Jung-gu Gil-dong Seoul Korea
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-phone-square-alt"></i> Telephone: 02-111-1111
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-hospital"></i> Registered Business Number: 111-11-1111
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
