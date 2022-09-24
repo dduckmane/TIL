@@ -1,3 +1,5 @@
+[부모box가 사이즈가 지정시에]
+
 box모델안에 content안에 content가 들어가는 것이 아니라
 
 box모델안에 content top-0 left-0에 자식 content가 시작한다.라는 의미이다.
