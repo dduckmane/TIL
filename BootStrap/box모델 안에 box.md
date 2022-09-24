@@ -9,3 +9,5 @@ box모델안에 content top-0 left-0에 자식 content가 시작한다.라는 �
 이렇게 삐져나간다.
 
 content안에서 margin padding이 다 들어가는 것이 아니라 부모 content안에 자식 content가 시작이 된다.
+
+![image](https://user-images.githubusercontent.com/108928206/192081140-630b9488-b29c-47c1-8393-0e74a4750156.png)
