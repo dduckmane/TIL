@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        html {
+            font-size: 10px;
+        }
+
+        div {
+           border: 2px solid gray; 
+        }
+
+        /* 부모길이의 상대적 비율 */
+        .root {
+            width: 50%;
+            /* 10 x 2 = 20px */
+            font-size: 2rem;
+        }
+        .parent {
+            width: 50%;
+            /* width: 30em; */
+            font-size: 1.5em;
+        }
+        .child {
+            width: 50%;
+            font-size: 0.5em;
+            /* 자신의 글꼴에 대비 배수, 글꼴은 상속이니까 부모의 영향을 받음 */
+        }
+
+        .box {
+            /* width: 100%; */
+            height: 50vh;
+            background: tomato;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <!-- .root>.parent>.child*2 -->
+    <div class="root">ROOT
+        <div class="parent">PARENT
+            <div class="child">CHILD1</div>
+            <div class="child">CHILD2</div>
+        </div>
+    </div>
+
+
+    <div class="box">BOX</div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        html {
+            font-size: 30px;
+        }
+
+        .eco {
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+
+            /* 상속 */
+            color: dodgerblue;
+            font-weight: bold;
+        }
+        .animal {
+            width: 200px;
+            height: 200px;
+            background: orange;
+
+            /* 상속 */
+            color: gray;
+        }
+        .plant {
+            width: 200px;
+            height: 200px;
+            background: green;
+
+            /* 상속 */
+            color: violet;
+            font-weight: normal;
+        }
+       
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- .eco>.animal+(.plant>div*3) -->
+    <div class="eco">생태계
+        <div class="animal">동물</div>
+        <div class="plant">식물
+            <div>소나무</div>
+            <div>튤립</div>
+            <div>해바라기</div>
+        </div>
+    </div>
+
+
+</body>
+</html>

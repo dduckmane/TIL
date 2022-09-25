@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+         body{
+            height: 3000px;
+        }
+        #top{
+            /* background-image: url(../image/sungu.jpg);
+            height: 80vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; */
+            background: url(../image/sungu.jpg)
+            no-repeat
+            center/cover
+            /* 앞이 positon 뒤가 size이다. */
+            ;
+            height: 80vh;
+            opacity: 95%;
+            background-attachment: fixed;
+        }
+        #top .overlay{
+            background-color: rgba(29, 28, 28, 0.10);
+            width: 100%;
+            height: 100%;
+        }
+        
+        #top .head h1 a{
+            font-size: 30px;
+            font-style: italic;
+            font-weight: 300;
+            text-shadow: 5px 5px 5px rgb(102, 101, 101);
+            color: rgb(95, 93, 93);
+            margin-bottom: 10px;
+            text-decoration: none;
+            
+        }
+        #top .container{
+            position: relative;
+        }
+        #top .body{
+            position: absolute;
+            width: 80%;
+            height: 500px;
+            background: rgba(10, 10, 10, 0.40);
+            top: 10rem;
+            left: 3rem;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: antiquewhite;
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="top">
+        <div class="overlay">
+            <div class="container">
+                <div class="head">
+                    <h1> <a href="#">minsung kim</a></h1>
+                </div>
+                <div class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eaque beatae pariatur voluptatum suscipit non cumque optio nihil voluptatem. Est, illum maiores aliquam reprehenderit tempora laboriosam assumenda aut sit amet.
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

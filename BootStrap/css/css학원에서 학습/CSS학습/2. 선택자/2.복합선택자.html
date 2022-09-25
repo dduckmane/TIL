@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        li.orang {
+            color: orange;
+        }
+
+        span.orang {
+            background: tomato;
+        }
+
+        aside.banner#roll {
+            width: 50px;
+            height: 100px;
+            background: red;
+        }
+
+        h1.yellow.low.primary#change {
+            background: yellow;
+        }
+
+        /* 맨 뒤에가 타겟, 앞에는 조건 */
+
+        ul > .orang {
+            font-size: 24px;
+            background: red;
+        }
+
+        .shadow > p {
+            font-style: italic;
+        }
+
+        div.shadow > em {
+            color: green;
+        }
+
+        html > body > .shadow > ul > .reverse.orang {
+            background: aqua;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <aside class="banner image" id="roll"></aside>
+
+
+    <em>안녕안녕</em>
+
+    
+    <!-- div>(ul>li*3)+div+p+span -->
+    <div class="shadow">
+
+        <em>잘가잘가</em>
+
+        <ul>
+            <li id="apple">사과</li>
+            <li class="reverse">딸기</li>
+            <li class="orang reverse" id="big">오렌지</li>
+        </ul>
+        <div class="reverse">당근</div>
+        <p>토마토</p>
+        <span class="orang">오렌지</span>
+
+        <h1 id="change" class="fruits yellow low primary">파인애플</h1>
+    </div>
+
+
+</body>
+</html>

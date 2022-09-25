@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+
+        /* a reset */
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* util */
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        /* style */
+
+        nav {
+
+        }
+        nav ul{
+          padding: 15px;
+          box-sizing: border-box;
+        }
+        nav .lnb {
+            background: orange;
+            width: 55%;
+            float: left;
+        }
+        nav .rnb {
+            background: tomato;
+            width: 40%;
+            float: right;
+        }
+
+        nav ul li {
+            /* border: 2px solid #000; */
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        nav ul li:hover{
+          border-bottom: 2px solid red;
+        }
+
+        nav .lnb li {
+            width: 18%;
+            margin-right: 2%;
+        }
+        nav .rnb li {
+            width: 31.333%;
+            margin-right: 2%;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav class="clearfix">
+        <ul class="lnb">
+            <!-- li*5>a -->
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BOARD</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+        </ul>
+        <ul class="rnb">
+            <li><a href="#">검색</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

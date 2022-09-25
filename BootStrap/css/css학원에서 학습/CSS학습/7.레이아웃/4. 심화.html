@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid red;
+            margin: 20px;
+
+            /* overflow: hidden; */
+        }
+
+        .container2 {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid blue;
+            margin: 20px;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        /* float이란건 마치 한글에 어울림기능이랑 같다.
+        거기서 left로 갈것인지 right로 갈것인지 정해야한다.
+        그리고 float은 좌우에 다 영향을 주어서 
+        clearbox처럼 float은 아니지만 영향이 받는 애를 clear처리를 해줘야한다.
+        */
+
+        .container3 {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid green;
+            margin: 20px;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            border-radius: 20px;
+
+            float: left;
+        }
+
+       
+
+
+    </style>
+</head>
+<body>
+    
+
+    <!-- .container>.box*3 -->
+    <div class="container clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- <div class="cbox"></div> -->
+    </div>
+
+    <div class="container2 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container3 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+
+
+</body>
+</html>

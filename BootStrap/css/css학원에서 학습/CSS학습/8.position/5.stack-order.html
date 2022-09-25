@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container {
+            width: 80%;
+            margin: 50px auto 0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 15px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+            float: left;
+            box-shadow: 2px 2px 20px #222;
+            margin-right: -30px;
+            position: relative;
+        }
+        .box:nth-child(even) {
+            margin-top: 30px;
+        }
+        .box2:hover{
+            z-index: 2;
+        }
+        .box3{
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <!-- .container>.box.box${$}*5 -->
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+    </div>
+
+</body>
+</html>
