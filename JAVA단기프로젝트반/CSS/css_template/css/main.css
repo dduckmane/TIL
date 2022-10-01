@@ -1,0 +1,427 @@
+/*  구글 웹폰트 로딩  */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* reset */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button, input {
+    border: none;
+    outline: none;
+    color: inherit;
+}
+
+/* common */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body, .wrap {
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.en {
+    font-family: 'Exo 2', sans-serif;
+}
+br.mo{
+    display: none;
+}
+header{
+    background: rgba(0, 0, 0, 0.2);
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    /* position을 지정해주면 w100이 깨짐 그래서 w-100을 넣어주어야하마 */
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+header .inner-header{
+    margin: 0 auto;
+    width: 84%;
+}
+header .inner-header .logo{
+float: left;
+width: 200px;
+}
+header .inner-header .logo img{
+    width: 100%;
+}
+header .inner-header .gnb{
+float: left;
+margin-left: 80px;
+}
+header .inner-header nav li{
+    float: left;
+    text-align: center;
+}
+header .inner-header nav li a{
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+header .inner-header .gnb li{
+    margin-right: 80px;
+    float: right;
+    
+}
+header .inner-header .gnb li a:hover{
+    color: orange;
+
+    /* li는 블록이어서 넓지만 a태그는 인라인이어서 작다. 그래서 크기를 넓혀주어야 한다. */
+}
+header .inner-header .tnb li{
+    margin-right: 25px;
+    float: right;
+}
+header .inner-header .gnb li
+header .inner-header .tnb{
+float: right;
+}
+header .inner-header .tnb li a {
+    text-align: center;
+}
+header .inner-header .tnb li:first-child i,
+header .inner-header .tnb li:nth-child(2) i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+header .inner-header .tnb li:last-child i {
+    margin-left: 5px;
+}
+header .inner-header .tnb li:last-child a {
+    display: block;
+    width: 105px;
+    line-height: 2;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-top: 33px;
+    /* button은 href가 없다. 그래서 a태그를 button모양으로 디자인하면 좋다. */
+}
+header .inner-header .tnb li:last-child a:hover{
+    background: #fff;
+    color: #ff8342;
+}
+section.main{
+    background-image: url(../img/vis_4.jpg);
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-attachment: fixed를 넣어주면 배경이 고정이 된다. */
+    position: relative;
+    
+}
+section.main .main-title{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.7);
+    /* text-shadow를 잘 넣어주어야한다. */
+}
+section.main .main-title h2{
+    font-size: 55px;
+
+}
+section.main .main-title .view {
+    display: block;
+    font-size: 15px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    padding: 8px 0;
+    width: 180px;
+
+    margin: 0 auto;
+    letter-spacing: 2px;
+}
+
+section.main .main-title .view:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+section.about{
+
+    padding: 80px 0;
+}
+section .title{
+    text-align: center;
+}
+section .title h2{
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+section .title p{
+    font-size: 18px;
+}
+section ul{
+    tab-size: 0.5rem;
+    width: 74%;
+    margin: 30px auto;
+    /* margin을 아제 부터 맞출것 임 */
+}
+
+section.about ul li a:hover img{
+    /* a:hover img --> 이렇게 적어주어야 img에 간다. */
+    transform: scale(1.2);
+    /* 1.2배 확대 */
+
+}
+section.about ul li{
+    float: left;
+    width: 33.3333%;
+    /* li만 줄입다고 사진이 줄지는 않는다. 하지만 li도 줄여야 한다. */
+}
+section.about ul li .img-box{
+    /* img-boxs는 박스 모델이므로 w-100%이다. 그래서 위의 33.3333을 받는다. */
+    overflow: hidden;
+    /* hidden을 걸어준다. */
+    
+}
+section.about ul li .img-box img{
+    /* 하지만 사진은 인라인이어서 width를 지정을 해주어야 한다. */
+    width: 100%;
+    transition: 0.6s ease;
+    /* 사진에 걸어주어야 한다. */
+}
+section.about ul li .text{
+    padding: 25px;
+}
+section.about ul li .text h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+section.about ul li .text p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+/* section innovation style */
+section.innovation{
+    margin-bottom: 150px;
+}
+section.innovation .img-box{
+    width: 74%;
+    height: 540px;
+    margin: 50px auto 0;
+    background: url('../img/product_1.jpg')
+    no-repeat center/ cover;
+    position: relative;
+}
+section.innovation .img-box .inner{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,-50%);
+    background: #000;
+    color: #fff;
+}
+section.innovation .img-box .inner h3 {
+    background: #fff;
+    color: #222;
+    font-size: 18px;
+    padding: 25px 45px;
+    box-sizing: border-box;
+}
+section.innovation .img-box .inner .bottom {
+    padding: 35px 85px;
+    box-sizing: border-box;
+}
+section.innovation .img-box .inner .bottom p {
+    width: 70%;
+    float: left;
+    line-height: 1.6;
+}
+section.innovation .img-box .inner .bottom a {
+    float: right;
+    background: #ff8342;
+    border-radius: 50px;
+    padding: 7px 30px;
+}
+section.innovation .img-box .inner .bottom a:hover {
+    background: #f86010;
+}
+/* section me style */
+section.me {
+    padding: 80px 0;
+    margin-bottom: 150px;
+    background: url('../img/me.jpg') 
+        no-repeat center / cover;
+}
+section.me ul.list {
+    width: 74%;
+    margin: 50px auto;
+    /* background: orange; */
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+section.me ul.list > li {
+    /* 중요--> 후손선택으로한다면 자식만 들어가는게 아니라 자식안에 자식의 li도 들어간다. */
+    padding: 30px 60px;
+}
+section.me ul.list > li:first-child {
+    border-bottom: 1px solid #ddd;
+}
+section.me ul.list > li h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+}
+section.me ul.list > li h3 span {
+    /* 한쪽만 옆으로 가게 하기 위해서이다. */
+    position: absolute;
+    left: -35px;
+    color: #ff8342;
+}
+section.me ul.list > li p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+section.me ul.list > li .more {
+    font-size: 16px;
+    font-weight: 700;
+}
+section.me ul.list > li .more span {
+    color: #ff8342;
+    margin-left: 3px;
+    font-size: 14px;
+}
+
+section.me ul.list ul.in {
+    margin-bottom: 30px;
+}
+
+section.me ul.list ul.in li em {
+    float: left;
+    font-weight: 700;
+    width: 12%;
+    /* margin을 안주고 width 12%로 주어야 양쪽끝이 맞다. */
+}
+section.me ul.list ul.in li p {
+    float: left;
+    position: relative;
+}
+section.me ul.list ul.in li p::before {
+    /* 임의로 도형을 만들어서 p태그 전에 준다. */
+    content: '';
+    /* display: bolck을 안줬다. 이유는-> float이나 position속성을 주면 자동으로 display: block이 알아서 들어간다. */
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ff8342;
+    position: absolute;
+    left: -40px;
+    top: 10px;
+}
+
+#incruit-btn {
+    display: block;
+    width: 280px;
+    background: #ff8342;
+    color: #fff;
+    margin: 0 auto;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+section.sns{
+    margin-bottom: 60px;
+}
+section.sns ul{
+    width: 74%;
+    margin: 50px auto;
+}
+section.sns ul li{
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+}section.sns ul li:last-child{
+    margin-right: 0;
+}
+section.sns ul li .img-box{
+    /* 이건 박스태그이므로 w100%로가 default값이지만 */
+    height: 210px;
+    overflow: hidden;
+    /* 사진이 잘리는것을 감수를 해야함 */
+    /* 박스를 210px로 하고 나머지 사진은 잘르겠다. */
+}
+section.sns ul li .img-box img{
+    /* img는 인라인이므로 width를 지정해주어야한다. */
+    /* 참고로 width를 조정하면 height도 비율대로 들어온다. */
+    width: 100%;
+}
+section.sns ul li .bottom {
+    padding: 20px 0 20px 30px;
+    box-sizing: border-box;
+}
+section.sns ul li .bottom p {
+    font-size: 18px;
+}
+section.sns ul li .bottom p.color {
+    color: #ff8342;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+section.sns ul li .bottom p.time {
+    color: #999;
+    font-size: 14px;
+    margin-top: 30px;
+}
+section.sns ul li .bottom p.time i {
+    margin-right: 5px;
+    font-size: 0.9em;
+}
+
+/* footer style */
+footer {
+    border-top: 1px solid #999;
+    padding: 30px 0;
+}
+footer .inner {
+    width: 84%;
+    margin: 0 auto;
+}
+footer .inner .ft-logo {
+    float: left;
+    width: 14%;
+}
+footer .inner .ft-logo img {
+    width: 100%;
+}
+footer .inner .address {
+    float: left;
+    margin-left: 100px;
+    margin-top: 35px;
+}
+footer .inner .address li:first-child {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+footer .inner .address li:last-child {
+    color: #999;
+}
+
+footer .inner .list {
+    float: right;
+    margin-top: 40px;
+}
+footer .inner .list li {
+    float: left;
+    margin-left: 80px;
+}
+footer .inner .list li:last-child {
+    font-weight: 700;
+}
+footer .inner .list li a:hover {
+    color: #ff8342;
+    text-decoration: underline;
+}
+
+
