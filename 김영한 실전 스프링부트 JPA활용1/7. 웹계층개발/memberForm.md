@@ -1,3 +1,9 @@
 엔티티는 비지니스로직에 맞게 최대한 순수히 가져가고 
 
 웹을 이용한 form이나 또는 DTO를 사용해야한다.
+
+![image](https://user-images.githubusercontent.com/108928206/193458081-4d5a5533-faae-4a30-8a04-421480eddb87.png)
+
+이것도 memberEntity를 그대로 사용하지말고 dto를 이용하는 것이 맞다.
+
+엔티티에 화면관련 코드가 있으면 안된다.
