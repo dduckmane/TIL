@@ -16,7 +16,7 @@ v4는 orderRepository에 잇는 것을 볼 수가 있는데 이건 리포지토�
 
 ![image](https://user-images.githubusercontent.com/108928206/193972264-a0e8d15f-f6c9-4942-894c-3b0be2d58f5f.png)
 
-2. 따로 페키지를 만들자
+2. 따로 페키지를 만들자--> OrderRepository와 별개를 하자
 
 ![image](https://user-images.githubusercontent.com/108928206/193972672-c371b34f-b607-4379-b714-8e51359da215.png)
 
