@@ -1,4 +1,4 @@
-문제점: jpql로 dto로 바로 변환할때 컬렉션은 안됨
+문제점: jpql로 dto로 바로 변환할때 컬렉션은 안됨--> 한마디로 Batchsize가 효과가 없다.
 
 ![image](https://user-images.githubusercontent.com/108928206/194054986-f22cf572-7127-4374-8d0e-cf7d311f79b3.png)
 
