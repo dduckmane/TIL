@@ -30,4 +30,11 @@
       OrderQueryService: 화면이나 API에 맞춘 서비스 (주로 읽기 전용 트랜잭션 사용)
 
       --> 이러면 dto도 다 서비스에 녹이면 된다. queryservice안에서도 dto넣고
+      
+      
+      
+ ![image](https://user-images.githubusercontent.com/108928206/194193260-4d074fdd-4367-4a31-9ad5-314e7f867d61.png)
+
+![image](https://user-images.githubusercontent.com/108928206/194193296-7f15622c-cc82-4477-a5f6-b89127db2757.png)
+
   
