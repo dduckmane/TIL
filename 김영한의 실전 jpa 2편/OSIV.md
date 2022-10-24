@@ -17,3 +17,16 @@
 - 그러므로 영속성 컨텍스트가 없다면 jpql이 못나가므로 프록시가 초기화가 안된다.
 - osiv를 끄면 영속성 컨텍스트는 컨트롤러나 뷰에는 없으므로 프록시가 초기화 되지 못한다.
 - transactional이 없어도 jpql은 나가네??
+
+## [실습]
+
+![image](https://user-images.githubusercontent.com/108928206/197558940-6642a157-7d49-433b-9d48-2e1ee4775971.png)
+
+osiv가 키면 정상 작동
+
+
+#### (끄면)
+
+![image](https://user-images.githubusercontent.com/108928206/197559059-bd317ed9-1e2b-4a33-91d2-c015f5c9d461.png)
+
+에러
